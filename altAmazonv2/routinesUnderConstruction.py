@@ -1,10 +1,13 @@
+from utils import *
+from routines import *
+
 # My temp routines are below for potential optimizations
 
 ## flip into opponent routine
 class bully_flip():
     def __init__(self):
         self.step = 0
-    def run(selfself, agent):
+    def run(self, agent):
         if len(agent.stack) < 1:
             relative_target = agent.foes[0].location - agent.me.location
             local_target = agent.me.local(relative_target)
@@ -14,7 +17,7 @@ class bully_flip():
 class always_shoot():
     def __init__(self):
         self.step = 0
-    def run(selfself, agent):
+    def run(self, agent):
         if len(agent.stack) < 1:
             agent.push(short_shot(agent.foe_goal.location))
 
@@ -23,7 +26,7 @@ class always_shoot():
 class goto_boostv1():
     def __init__(self):
         self.step = 0
-    def run(selfself, agent):
+    def run(self, agent):
         if len(agent.stack) < 1:
             large_boosts = [boost for boost in agent.boosts if boost.large and boost.active]
             closest = large_boosts[0]
@@ -41,7 +44,7 @@ class goto_boostv1():
 class simple_kickoff():
     def __init__(self):
         self.step = 0
-    def run(selfself, agent):
+    def run(self, agent):
         if len(agent.stack) < 1:
             if agent.kickoff_flag:
                 agent.push(kickoff())
