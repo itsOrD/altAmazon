@@ -1,7 +1,7 @@
 # altAmazon
 A custom RocketLeague bot in Python, organized by progression.
 
-Largely, and heavily inspired by RLbots.org
+Largely, and heavily inspired by [RLbot.org](rlbot.org) - *many thanks to ddthj!*
 
 Find the videos of altAmazonv2 crushing 'Pro' level bots here: 
 
