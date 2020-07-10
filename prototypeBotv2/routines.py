@@ -1,9 +1,6 @@
 from utils import *
 
 #This file holds all of the mechanical tasks, called "routines", that the bot can do
-from altAmazonv2.objects import Vector3
-from altAmazonv2.utils import defaultPD, defaultThrottle, cap, sign, backsolve, shot_valid, side
-
 
 class atba():
     #An example routine that just drives towards the ball at max speed

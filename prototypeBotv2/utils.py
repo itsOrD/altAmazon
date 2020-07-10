@@ -2,8 +2,6 @@ import math
 from objects import Vector3
 
 #This file is for small utilities for math and movement
-from altAmazonv2.objects import Vector3
-
 
 def backsolve(target, car, time, gravity = 650):
     #Finds the acceleration required for a car to reach a target in a specific amount of time

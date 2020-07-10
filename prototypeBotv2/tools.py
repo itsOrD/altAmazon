@@ -1,12 +1,6 @@
-import math
-
 from routines import *
 
 #This file is for strategic tools
-from altAmazonv2.objects import Vector3
-from altAmazonv2.routines import jump_shot, aerial_shot
-from altAmazonv2.utils import cap, post_correction, in_field, find_slope
-
 
 def find_hits(agent,targets):
     #find_hits takes a dict of (left,right) target pairs and finds routines that could hit the ball between those target pairs
