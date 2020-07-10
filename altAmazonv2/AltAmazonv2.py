@@ -14,13 +14,6 @@ from routines import *
 
 class BotLogic(GoslingAgent):
     def run(agent):
-        ## Raw utilities usage:
-        # relative_target = agent.ball.location - agent.me.location
-        # local_target = agent.me.local(relative_target)
-        # defaultPD(agent, local_target)
-        # defaultThrottle(agent, 2300)
-
-
         ## Routines interacting with the stack:
         if len(agent.stack) < 1:
             # if agent.kickoff_flag:
@@ -33,14 +26,3 @@ class BotLogic(GoslingAgent):
                 relative = agent.friend_goal.location - agent.me.location
                 defaultPD(agent, agent.me.local(relative))
                 defaultThrottle(agent, 1410)
-
-        agent.push(goto_boost)
-
-        ## Optimize for kickoffs
-        # if len(agent.stack) < 1:
-        #     if agent.kickoff_flag:
-        #         agent.push(kickoff())
-        #     else:
-        #         agent.push(atba())
-
-        
